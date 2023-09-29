@@ -134,8 +134,6 @@
   }
  
 }
- 
-
  .banner-section {
   background: url(images/banner.png) center/cover no-repeat;
   margin-top: -80px;
@@ -280,14 +278,11 @@
  @media (max-width: 768px) {
   .service-section {
     padding: 50px 0;
-   
   }
   .service  {
     display: flex;
     justify-content:center;
-  
     flex-direction: column;
-
   }
   
   .service-title {
@@ -296,29 +291,7 @@
   .home-icon i {
     font-size: 24px;
  }
-   
-  
-  
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
  .work-section {
    padding-bottom: 120px;
    position: relative;
