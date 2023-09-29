@@ -66,15 +66,15 @@
    text-decoration: none;
  }
  .nav {
-   color: white;
-   background-color: rgba(16, 16, 16, 0.19);
+  color: #d5d5d3;
+   background-color: rgba(16, 16, 16, 0.1);
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin: 0 auto;
    z-index: 1000;
    position: relative;
  }
+  
  .active {
    position: relative;
  }
@@ -94,11 +94,10 @@
    min-height: 20px;
    width: 1px;
    background-color: rgb(131, 129, 129);
-   margin-top: auto;
    align-items: center;
-   margin-bottom: auto;
    margin-right: 5px;
  }
+ 
  .nav .navbar a {
    font-size: 1.1rem;
    margin: 1.3rem;
@@ -120,6 +119,23 @@
    font-weight: 600;
    text-decoration: none;
  }
+ 
+ @media (max-width: 768px) {
+  .container {
+     padding: 0 20px;
+  }
+
+  .header-circles {
+     flex-direction: column;
+     gap: 20px;
+  }
+  .navbar{
+    display: none;
+  }
+ 
+}
+ 
+
  .banner-section {
   background: url(images/banner.png) center/cover no-repeat;
   margin-top: -80px;
@@ -221,10 +237,9 @@
  }
  .service-title {
   width: 300px;
-
  }
  .service-card {
-   max-width: 390px;
+  max-width: 390px; 
    align-items: flex-start;
    display: flex;
  }
@@ -261,7 +276,49 @@
   grid-auto-columns: 1fr;
   display: grid;    
  }
+ 
+ @media (max-width: 768px) {
+  .service-section {
+    padding: 50px 0;
+   
+  }
+  .service  {
+    display: flex;
+    justify-content:center;
+  
+    flex-direction: column;
 
+  }
+  
+  .service-title {
+    font-size: 15px; 
+  }
+  .home-icon i {
+    font-size: 24px;
+ }
+   
+  
+  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
  .work-section {
    padding-bottom: 120px;
    position: relative;
@@ -347,6 +404,13 @@ grid-template: auto / repeat(5, 1fr);
    left: auto;
    right: -113%;
  }
+ @media (max-width: 768px) {
+  .work-grid {
+   display: flex;
+   flex-direction: column;
+ 
+  }
+}
  .team-section {
    padding-top: 100px;
    padding-bottom: 100px;
@@ -355,6 +419,13 @@ grid-template: auto / repeat(5, 1fr);
    gap: 50px;
    grid-template: auto / repeat(3, 1fr);
  }
+ @media (max-width: 768px) {
+ .home-team-grid {
+   display: flex;
+   flex-direction: column;
+ 
+  }
+}
  .team-card {
    position: relative;
  }
@@ -390,6 +461,7 @@ grid-template: auto / repeat(5, 1fr);
    left: auto;
    right: 0%;
  }
+
  .features-section {
    padding-top: 120px;
    padding-bottom: 120px;
@@ -415,6 +487,16 @@ grid-template: auto / repeat(5, 1fr);
   grid-gap: 50px;
   grid-template: auto / 1fr;
   align-items: center;  
+ }
+ @media (max-width: 768px) {
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+   }
+   .features-text
+   {
+     color: #d3a210;
+   }
  }
  .mg-top-20 {
    margin-top: 20px;
@@ -448,8 +530,7 @@ grid-template: auto / repeat(5, 1fr);
  }
  .features-dark-bg {
    min-width: 50%;
- }
-   
+ } 
  .features-image {
   position: relative;
 }
